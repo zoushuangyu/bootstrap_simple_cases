@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>模态框-提示框-警告框</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<script src="css/bootstrap/js/jquery.min.js" type="text/javascript"></script>
+	<!-- bootstrap -->
+	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<script src="css/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="css/bootstrap/js/sco.modal.js" type="text/javascript"></script>
+	<!-- fontawesome -->
+	<link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<!-- common -->
+	<link href="css/common.css" rel="stylesheet" type="text/css"/>
+	<script src="js/modalTipWarn.js" type="text/javascript"></script>
+	<style type="text/css">
+		/*模态框-提示框-警告框*/
+		.popup a{margin: 10px;}
+	</style>
+</head>
+<body>
+	<p class="popup">
+		<!-- 模态框 -->
+		模态框：（鼠标点击出现）
+		<a class="btn btn-primary" onclick="load(this,'load')">加载中</a>
+		<a class="btn btn-primary" onclick="load(this,'print')">打印中</a>
+		<a class="btn btn-primary" onclick="load(this,'confirm')">确定删除</a>
+		<a class="btn btn-primary" onclick="load(this,'cont')">弹出内容</a>
+
+		<!-- 提示框--><br/>
+		提示框：（鼠标悬浮出现）
+		<a data-toggle="collapse" data-trigger="tooltip" data-content="右边提示框" data-position="e">右边提示框</a>
+		<a data-toggle="collapse" data-trigger="tooltip" data-content="左边提示框" data-position="w">左边提示框</a>
+		<a data-toggle="collapse" data-trigger="tooltip" data-content="上边提示框" data-position="n">上边提示框</a>
+		<a data-toggle="collapse" data-trigger="tooltip" data-content="下边提示框" data-position="s">下边提示框</a>
+
+		<!-- 警告框--><br/>
+		警告框：（鼠标点击出现）
+		<a class="btn btn-primary" onclick="warn('warning')">警告</a>
+		<a class="btn btn-primary" onclick="warn('success')">成功</a>
+		<a class="btn btn-primary" onclick="warn('info')">信息</a>
+		<a class="btn btn-primary" onclick="warn('danger')">危险</a>
+	</p>
+</body>
+</html>
